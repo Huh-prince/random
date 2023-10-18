@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Tilt Neon', sans-serif;
+   color: white;
+
+}
+html, body{
+    height: 100%;
+   width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#workArea{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+
+#nav{
+    pointer-events: all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* background-color: grey; */
+}
+#nav #link a{
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+    transition: 300ms ease-in-out;
+
+}
+#nav #link a:hover{
+    color: beige;
+}
+
+
+#hero{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* height: 100px;                                   */
+    /* background-color: aqua; */
+}
+
+#heroLeft{
+    width: 50%;
+    /* background-color: blue; */
+}
+
+
+#heroLeft #text{
+    overflow: hidden;
+    /* position: relative; */
+    height: 8vw;
+}
+
+#heroLeft #text h1{
+    /* position: absolute;
+    top: 100%;
+    left: 0; */
+    line-height: 0.9;
+    font-size: 9vw;
+}
+
+
+#heroRight{
+    width: 20%;
+    /* background-color: grey;                                      */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#heroRight #imageDiv{
+    margin: 20px 0;
+    height: 150px;
+    background-color: green;
+    width: 100%;
+}
+
+#heroRight #imageDiv img{
+    width: 100%;
+    height: 100%;
+}
+#heroRight p{
+    text-align: end;
+    margin-top: 15px;
+}
